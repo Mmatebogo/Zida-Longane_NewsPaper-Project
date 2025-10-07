@@ -68,3 +68,95 @@ nav a:hover {
 }
 
 /* NAV STYLE END */
+
+
+/* MAIN STYLE STSRT HERE*/
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main-article {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.main-article h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.main-article img {
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.articles article {
+  background: #fff;
+  flex: 1 1 calc(33% - 10px);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.articles img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.articles h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+
+.sidebar {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.widget {
+  margin-bottom: 20px;
+}
+
+.widget h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.widget ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* MAIN STYLE ENDS HERE*/
+
+
+/*FOOTER STARTS HERE */
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/*FOOTER ENDS HERE*/
