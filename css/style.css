@@ -5,6 +5,11 @@
   font-family: 'Georgia', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   background-color: #f9f9f9;
   color: #333;
@@ -30,6 +35,11 @@ header {
 
 .logo img{
     height: 50px;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .logo h1 {
@@ -71,29 +81,41 @@ nav a:hover {
 
 
 /* MAIN STYLE STSRT HERE*/
-main {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px;
-  padding: 20px;
+.main-content {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
 }
 
-.main-article {
+.main-content .main-article {
+  width: 75%;
   background: #fff;
   padding: 20px;
   border-radius: 5px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
-.main-article h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+.main-content .main-article h2{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
-.main-article img {
-  width: 100%;
+.main-content .main-article img{
+  height: 50%;
   margin: 15px 0;
   border-radius: 5px;
 }
+.main-content .main-article img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.main-content .sidebar {
+  width: 25%;
+}
+
 
 .articles {
   display: flex;
@@ -111,23 +133,30 @@ main {
 
 .articles img {
   width: 100%;
+  height: 60%;
   border-radius: 5px;
+}
+.articles img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .articles h3 {
   margin: 10px 0;
   font-size: 1.1rem;
-}
+} 
 
 
 .sidebar {
   background-color: #f1f1f1;
   padding: 15px;
-  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .widget {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .widget h4 {
@@ -151,6 +180,8 @@ footer {
   text-align: center;
   padding: 20px 10px;
   margin-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 footer a {
