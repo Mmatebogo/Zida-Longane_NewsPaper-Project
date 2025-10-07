@@ -9,3 +9,62 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
+
+
+/* HEADER STYLE STARTS HERE */
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2px;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.logo h1 {
+  color: rgb(235, 27, 27);
+}
+
+.date {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* HEADER ENDS HERE */
+
+
+ /* NAV STYLE  START*/
+nav {
+  background-color: #222;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+    color:rgb(235, 27, 27);
+}
+
+/* NAV STYLE END */
